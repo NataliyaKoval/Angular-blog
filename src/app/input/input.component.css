@@ -1,0 +1,9 @@
+.field {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.help {
+  position: absolute;
+}
+
