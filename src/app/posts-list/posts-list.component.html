@@ -1,1 +1,6 @@
-<p>posts-list works!</p>
+<div *ngIf="postsList.length">
+  <div *ngFor="let post of postsList">
+    <a [href]="'https://en.wikipedia.org?curid=' + post.id" target="_blank">{{ post.title }}</a>
+  </div>
+</div>
+
