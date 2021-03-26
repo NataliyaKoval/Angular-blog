@@ -2,15 +2,15 @@
 <div class="subtitle">Welcome back</div>
 
 <div class="box">
-  <form [formGroup]="loginForm">
+  <form (ngSubmit)="onSubmit(loginForm.value)" [formGroup]="loginForm">
     <app-input [control]="loginForm.get('email')" label="Email"></app-input>
     <app-input [control]="loginForm.get('password')" label="Password"></app-input>
-  </form>
 
-  <div class="buttons is-centered">
-    <button [disabled]="loginForm.invalid" class="button is-link" type="submit">Submit</button>
-    <button (click)="onResetClick()" class="button is-warning" type="button">Reset</button>
-  </div>
+    <div class="buttons is-centered">
+      <button [disabled]="loginForm.invalid" class="button is-link" type="submit">Submit</button>
+      <button (click)="onResetClick()" class="button is-warning" type="button">Reset</button>
+    </div>
+  </form>
 </div>
 
 <div class="subtitle">
