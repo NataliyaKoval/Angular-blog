@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {AuthService} from '../services/auth.service';
 
 @Component({
   selector: 'app-registration',
@@ -15,10 +16,26 @@ export class RegistrationComponent implements OnInit {
     password: new FormControl('', [Validators.required, Validators.minLength(6)])
   });
 
-  constructor() {
+  constructor(private authService: AuthService) {
   }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(): void {
+    this.authService.signup(this.registrationForm.value)
+      .subscribe({
+        next: (response) => {
+          console.log('response', response);
+        },
+        error: (err) => {
+          if (!err.status) {
+            this.registrationForm.setErrors({noConnection: true});
+          } else {
+            this.registrationForm.setErrors({unknownError: true});
+          }
+        }
+      });
   }
 
   onResetClick(): void {

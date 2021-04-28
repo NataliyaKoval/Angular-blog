@@ -2,17 +2,17 @@
 <div class="subtitle">Already have an account? <a routerLink="/login">Login</a></div>
 
 <div class="box">
-  <form [formGroup]="registrationForm">
+  <form (ngSubmit)="onSubmit()" [formGroup]="registrationForm">
     <app-input [control]="registrationForm.get('name')" label="Name"></app-input>
     <app-input [control]="registrationForm.get('surname')" label="Surname"></app-input>
     <app-input [control]="registrationForm.get('phone')" label="Phone"></app-input>
     <app-input [control]="registrationForm.get('email')" label="Email"></app-input>
     <app-input [control]="registrationForm.get('password')" label="Password"></app-input>
-  </form>
 
-  <div class="buttons is-centered">
-    <button [disabled]="registrationForm.invalid" class="button is-link" type="submit">Submit</button>
-    <button (click)="onResetClick()" class="button is-warning" type="button">Reset</button>
-  </div>
+    <div class="buttons is-centered">
+      <button [disabled]="registrationForm.invalid" class="button is-link" type="submit">Submit</button>
+      <button (click)="onResetClick()" class="button is-warning" type="button">Reset</button>
+    </div>
+  </form>
 </div>
 

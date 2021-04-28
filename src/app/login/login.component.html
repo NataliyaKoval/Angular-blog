@@ -2,7 +2,7 @@
 <div class="subtitle">Welcome back</div>
 
 <div class="box">
-  <form (ngSubmit)="onSubmit(loginForm.value)" [formGroup]="loginForm">
+  <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
     <app-input [control]="loginForm.get('email')" label="Email"></app-input>
     <app-input [control]="loginForm.get('password')" label="Password"></app-input>
 
