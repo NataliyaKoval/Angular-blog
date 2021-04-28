@@ -19,7 +19,6 @@ export class PostsListComponent implements OnInit {
   getPosts(): void {
     this.posts.search().subscribe(response => {
       this.postsList = response.random;
-      console.log('postsList', this.postsList);
     });
   }
 }
