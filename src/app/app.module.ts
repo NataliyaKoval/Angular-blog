@@ -16,6 +16,8 @@ import {LoginComponent} from './login/login.component';
 import {RegistrationComponent} from './registration/registration.component';
 import {InputComponent} from './input/input.component';
 import {CarouselComponent} from './carousel/carousel.component';
+import {TodoComponent} from './todo/todo.component';
+import {OrderModule} from 'ngx-order-pipe';
 
 @NgModule({
   declarations: [
@@ -28,14 +30,16 @@ import {CarouselComponent} from './carousel/carousel.component';
     LoginComponent,
     RegistrationComponent,
     InputComponent,
-    CarouselComponent
+    CarouselComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    OrderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
