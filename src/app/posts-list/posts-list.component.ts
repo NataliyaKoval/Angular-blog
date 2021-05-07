@@ -8,6 +8,8 @@ import {PostsService} from '../services/posts.service';
 })
 export class PostsListComponent implements OnInit {
   postsList = [];
+  pageSize = 5;
+  page = 1;
 
   constructor(private posts: PostsService) {
   }

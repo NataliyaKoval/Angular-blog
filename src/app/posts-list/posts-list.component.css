@@ -1,0 +1,25 @@
+.title {
+  color: #232384;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.list-item {
+  display: block;
+  margin: 15px 40px;
+}
+
+.pagination {
+  display: block;
+  margin-top: 80px;
+}
+
+.pagination /deep/ .ngx-pagination .current {
+  background-color: #232384;
+}
