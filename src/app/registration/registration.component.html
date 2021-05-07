@@ -9,6 +9,20 @@
     <app-input [control]="registrationForm.get('email')" label="Email"></app-input>
     <app-input [control]="registrationForm.get('password')" label="Password"></app-input>
 
+    <div *ngIf="
+    registrationForm.get('password').touched &&
+    registrationForm.get('passwordConfirmation').touched &&
+    registrationForm.errors"
+         class="ui red basic label"
+    >
+      <p *ngIf="registrationForm.errors.noConnection">
+        No internet connection detected, failed to sign up
+      </p>
+      <p *ngIf="registrationForm.errors.unknownError">
+        Failed to sign up
+      </p>
+    </div>
+
     <div class="buttons is-centered">
       <button [disabled]="registrationForm.invalid" class="button is-link" type="submit">Submit</button>
       <button (click)="onResetClick()" class="button is-warning" type="button">Reset</button>
