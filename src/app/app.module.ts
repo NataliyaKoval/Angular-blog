@@ -16,6 +16,7 @@ import {LoginComponent} from './login/login.component';
 import {RegistrationComponent} from './registration/registration.component';
 import {InputComponent} from './input/input.component';
 import {CarouselComponent} from './carousel/carousel.component';
+import {LayoutComponent} from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {CarouselComponent} from './carousel/carousel.component';
     LoginComponent,
     RegistrationComponent,
     InputComponent,
-    CarouselComponent
+    CarouselComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
