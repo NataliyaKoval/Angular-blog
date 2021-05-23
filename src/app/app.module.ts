@@ -4,6 +4,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
 
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import {OrderModule} from 'ngx-order-pipe';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -16,6 +18,7 @@ import {LoginComponent} from './login/login.component';
 import {RegistrationComponent} from './registration/registration.component';
 import {InputComponent} from './input/input.component';
 import {CarouselComponent} from './carousel/carousel.component';
+import {TodoComponent} from './todo/todo.component';
 import {LayoutComponent} from './layout/layout.component';
 
 @NgModule({
@@ -30,6 +33,8 @@ import {LayoutComponent} from './layout/layout.component';
     RegistrationComponent,
     InputComponent,
     CarouselComponent,
+    TodoComponent
+    CarouselComponent,
     LayoutComponent
   ],
   imports: [
@@ -37,7 +42,9 @@ import {LayoutComponent} from './layout/layout.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    OrderModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,12 @@
-<div *ngIf="postsList.length">
-  <div *ngFor="let post of postsList">
-    <a [href]="'https://en.wikipedia.org?curid=' + post.id" target="_blank">{{ post.title }}</a>
+<div class="container">
+  <h1 class="title is-2">Random Wikipedia Articles</h1>
+  <div *ngIf="postsList.length">
+    <div *ngFor="let post of postsList | paginate: { itemsPerPage: pageSize, currentPage: page }">
+      <a [href]="'https://en.wikipedia.org?curid=' + post.id" class="list-item" target="_blank">{{ post.title }}</a>
+    </div>
   </div>
+
+  <pagination-controls (pageChange)="page = $event" class="pagination"></pagination-controls>
 </div>
+
 
