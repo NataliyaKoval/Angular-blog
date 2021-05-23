@@ -26,7 +26,6 @@ export class RegistrationComponent implements OnInit {
     this.authService.signup(this.registrationForm.value)
       .subscribe({
         next: (response) => {
-          console.log('response', response);
         },
         error: (err) => {
           if (!err.status) {
