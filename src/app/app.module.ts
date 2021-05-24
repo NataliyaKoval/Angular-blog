@@ -33,7 +33,7 @@ import {LayoutComponent} from './layout/layout.component';
     RegistrationComponent,
     InputComponent,
     CarouselComponent,
-    TodoComponent
+    TodoComponent,
     CarouselComponent,
     LayoutComponent
   ],
