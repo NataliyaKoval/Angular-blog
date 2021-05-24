@@ -2,7 +2,7 @@
   <button (click)="sortingAZ()" class="button is-success">A-Z</button>
   <button (click)="sortingZA()" class="button is-warning">Z-A</button>
 
-  <ul *ngIf="todos.length && !sortAZ && !sortZA">
+  <ul *ngIf="todos?.length && !sortAZ && !sortZA">
     <li *ngFor="let todo of todos">
       {{ todo.title }}
     </li>

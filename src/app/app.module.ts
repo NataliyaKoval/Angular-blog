@@ -20,6 +20,7 @@ import {InputComponent} from './input/input.component';
 import {CarouselComponent} from './carousel/carousel.component';
 import {TodoComponent} from './todo/todo.component';
 import {LayoutComponent} from './layout/layout.component';
+import {TableComponent} from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {LayoutComponent} from './layout/layout.component';
     CarouselComponent,
     TodoComponent,
     CarouselComponent,
-    LayoutComponent
+    LayoutComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
