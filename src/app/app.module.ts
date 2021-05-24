@@ -21,6 +21,9 @@ import {CarouselComponent} from './carousel/carousel.component';
 import {TodoComponent} from './todo/todo.component';
 import {LayoutComponent} from './layout/layout.component';
 import {TableComponent} from './table/table.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CardsComponent} from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import {TableComponent} from './table/table.component';
     TodoComponent,
     CarouselComponent,
     LayoutComponent,
-    TableComponent
+    TableComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,9 @@ import {TableComponent} from './table/table.component';
     ReactiveFormsModule,
     IvyCarouselModule,
     OrderModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    BrowserAnimationsModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

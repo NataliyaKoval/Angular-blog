@@ -7,6 +7,7 @@ import {RegistrationComponent} from './registration/registration.component';
 import {TodoComponent} from './todo/todo.component';
 import {LayoutComponent} from './layout/layout.component';
 import {TableComponent} from './table/table.component';
+import {CardsComponent} from './cards/cards.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'todo', component: TodoComponent},
   {path: 'registration', component: RegistrationComponent},
   {path: 'layout', component: LayoutComponent},
-  {path: 'table', component: TableComponent}
+  {path: 'table', component: TableComponent},
+  {path: 'cards', component: CardsComponent}
 ];
 
 @NgModule({
