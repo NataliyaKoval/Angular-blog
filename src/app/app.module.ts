@@ -19,6 +19,11 @@ import {RegistrationComponent} from './registration/registration.component';
 import {InputComponent} from './input/input.component';
 import {CarouselComponent} from './carousel/carousel.component';
 import {TodoComponent} from './todo/todo.component';
+import {LayoutComponent} from './layout/layout.component';
+import {TableComponent} from './table/table.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CardsComponent} from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,11 @@ import {TodoComponent} from './todo/todo.component';
     RegistrationComponent,
     InputComponent,
     CarouselComponent,
-    TodoComponent
+    TodoComponent,
+    CarouselComponent,
+    LayoutComponent,
+    TableComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +50,9 @@ import {TodoComponent} from './todo/todo.component';
     ReactiveFormsModule,
     IvyCarouselModule,
     OrderModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    BrowserAnimationsModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

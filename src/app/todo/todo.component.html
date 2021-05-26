@@ -1,8 +1,14 @@
 <div class="box">
-  <button (click)="sortingAZ()" class="button is-success">A-Z</button>
-  <button (click)="sortingZA()" class="button is-warning">Z-A</button>
+  <div class="download-button">
+    <button (click)="downloadList()" class="button is-rounded is-link">Download You List</button>
+  </div>
 
-  <ul *ngIf="todos.length && !sortAZ && !sortZA">
+  <div *ngIf="todos?.length">
+    <button (click)="sortingAZ()" class="button is-success">A-Z</button>
+    <button (click)="sortingZA()" class="button is-warning">Z-A</button>
+  </div>
+
+  <ul *ngIf="todos?.length && !sortAZ && !sortZA">
     <li *ngFor="let todo of todos">
       {{ todo.title }}
     </li>

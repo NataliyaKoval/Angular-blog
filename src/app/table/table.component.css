@@ -1,0 +1,11 @@
+.pagination {
+  /*float: right;*/
+  /*margin-top: 200px;*/
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+}
+
+.pagination /deep/ .ngx-pagination .current {
+  background-color: #232384;
+}

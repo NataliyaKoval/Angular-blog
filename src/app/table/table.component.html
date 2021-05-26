@@ -1,0 +1,22 @@
+<table class="table is-fullwidth">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Company</th>
+  </tr>
+  <tr *ngFor="let item of table | paginate: { itemsPerPage: pageSize, currentPage: page }">
+    <td>{{item.name}}</td>
+    <td>{{item.address}}</td>
+    <td>{{item.company}}</td>
+  </tr>
+</table>
+
+<pagination-controls
+  (pageChange)="page = $event"
+  class="pagination"
+  screenReaderCurrentLabel="You're on page"
+  screenReaderPageLabel="page"
+  screenReaderPaginationLabel="Pagination"
+>
+
+</pagination-controls>
