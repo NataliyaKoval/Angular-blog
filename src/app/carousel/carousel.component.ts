@@ -15,10 +15,6 @@ export class CarouselComponent implements OnInit {
     {path: 'https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'},
     {path: 'https://images.unsplash.com/photo-1516125073169-9e3ecdee83e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGNhdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'}
   ];
-
-  constructor() {
-  }
-
   ngOnInit(): void {
   }
 
