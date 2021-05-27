@@ -24,6 +24,7 @@ import {TableComponent} from './table/table.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CardsComponent} from './cards/cards.component';
+import {CarouselAnimeComponent} from './carousel-anime/carousel-anime.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {CardsComponent} from './cards/cards.component';
     CarouselComponent,
     LayoutComponent,
     TableComponent,
-    CardsComponent
+    CardsComponent,
+    CarouselAnimeComponent
   ],
   imports: [
     BrowserModule,
